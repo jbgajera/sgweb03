@@ -6,15 +6,15 @@ const staticPath=path.join(__dirname,"/invitation");
 
 app.use(express.static(staticPath));
 
-app.get("/Savaliya",(req,res)=>{
+app.get("/01",(req,res)=>{
     res.sendFile(__dirname+"/invitation/savaliya_family.html");
 });
 
 
-app.get("/Sorathiya_family",(req,res)=>{
+app.get("/02",(req,res)=>{
     res.sendFile(__dirname+"/sorathiya_family.html");
 });
 // app.get("",(req,res)=>{
 //     res.render("index");
 // });
-app.listen(5000)
+app.listen(9000)
